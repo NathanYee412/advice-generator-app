@@ -4,6 +4,10 @@ import dice from '../images/icon-dice.svg';
 
 function Advice(props) {
     
+    const refreshPage = ()=>{
+        window.location.reload();  
+    }
+
 
     return(
         <div className='AdviceCard'>
@@ -14,9 +18,9 @@ function Advice(props) {
             <br />
             <br />
             <br />
-            <div className='Dice' onClick="history.go(0);">
+            <button className='Dice' onClick={refreshPage}>
                 <img className='DiceIcon' src={dice} alt='dice icon'/>
-            </div>
+            </button>
         </div>
     );
 }
