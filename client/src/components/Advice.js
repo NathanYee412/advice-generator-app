@@ -7,12 +7,14 @@ function Advice(props) {
 
     return(
         <div className='AdviceCard'>
-            <h1 className='QuoteNumber'>Advice #{props.number}</h1>
+            <h1 className='QuoteNumber'>ADVICE #{props.number}</h1>
             <p className='Quote'>"{props.quote}"</p>
+            <hr className='Line'/>
             <h1 className='Divider'>"</h1>
             <br />
             <br />
-            <div className='Dice'>
+            <br />
+            <div className='Dice' onClick="history.go(0);">
                 <img className='DiceIcon' src={dice} alt='dice icon'/>
             </div>
         </div>
