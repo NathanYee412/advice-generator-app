@@ -1,3 +1,15 @@
+button {
+    border: none;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+button:focus{
+    outline:none !important;
+}
 
 .AdviceCard {
     background-color: #313a49;
@@ -62,11 +74,12 @@
 }
 
 .Line {
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #adadad;
-    border: 0 none;
-    height: 1px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+    width: auto;
 }
   
 .QuoteNumber {

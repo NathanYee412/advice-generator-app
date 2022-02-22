@@ -1,8 +1,9 @@
-
 import './Advice.css';
 import dice from '../images/icon-dice.svg';
+import divider from '../images/pattern-divider-desktop.svg';
+import mobiledivider from '../images/pattern-divider-mobile.svg';
 
-function Advice(props) {
+function Advice({ number ,quote }) {
     
     const refreshPage = ()=>{
         window.location.reload();  
@@ -11,13 +12,12 @@ function Advice(props) {
 
     return(
         <div className='AdviceCard'>
-            <h1 className='QuoteNumber'>ADVICE #{props.number}</h1>
-            <p className='Quote'>"{props.quote}"</p>
-            <hr className='Line'/>
-            <h1 className='Divider'>"</h1>
-            <br />
-            <br />
-            <br />
+            <h1 className='QuoteNumber'>ADVICE #{number}</h1>
+            <p className='Quote'>"{quote}"</p>
+            <picture>
+                <source media='(max-width: 575px)' srcSet={mobiledivider}></source>
+                <img className='Line' src={divider} alt='divider' />
+            </picture>
             <button className='Dice' onClick={refreshPage}>
                 <img className='DiceIcon' src={dice} alt='dice icon'/>
             </button>
