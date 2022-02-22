@@ -4,7 +4,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
-    width: 550px;
+    width: 80%;
+    min-width: 350px;
+    max-width: 525px;
     height: auto;
     border-radius: 5%;
 }
@@ -19,10 +21,11 @@
     align-items: center;
     justify-content: center;
     
-    margin-left: 250px;
-    margin-top: -25px;
-  
     position: absolute;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .Dice:hover {
@@ -39,6 +42,7 @@
 }
   
 .Divider {
+    display: flex;
     margin: 0 auto;
     color: #d8e6f3;
 }
